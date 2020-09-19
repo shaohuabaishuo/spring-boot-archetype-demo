@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-archetype-domain" />
+        <module name="spring-boot-archetype-integration-remote" />
+        <module name="spring-boot-archetype-common" />
+        <module name="spring-boot-archetype-test" />
+        <module name="spring-boot-archetype-facade" />
+        <module name="spring-boot-archetype-integration-dal" />
+        <module name="spring-boot-archetype-app-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-archetype-app-service" target="1.8" />
+      <module name="spring-boot-archetype-common" target="1.8" />
+      <module name="spring-boot-archetype-domain" target="1.8" />
+      <module name="spring-boot-archetype-facade" target="1.8" />
+      <module name="spring-boot-archetype-integration-dal" target="1.8" />
+      <module name="spring-boot-archetype-integration-remote" target="1.8" />
+      <module name="spring-boot-archetype-parent" target="1.8" />
+      <module name="spring-boot-archetype-test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-archetype-app-service" options="-parameters" />
+      <module name="spring-boot-archetype-common" options="-parameters" />
+      <module name="spring-boot-archetype-domain" options="-parameters" />
+      <module name="spring-boot-archetype-facade" options="-parameters" />
+      <module name="spring-boot-archetype-integration-dal" options="-parameters" />
+      <module name="spring-boot-archetype-integration-remote" options="-parameters" />
+      <module name="spring-boot-archetype-test" options="-parameters" />
+    </option>
+  </component>
+</project>
