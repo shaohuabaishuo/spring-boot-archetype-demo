@@ -39,7 +39,11 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.jz</groupId>
+            <artifactId>spring-boot-starter-executor</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -235,11 +239,25 @@
             </properties>
         </profile>
         <profile>
-            <!-- tuhutest env -->
-            <id>tuhutest</id>
+            <!-- xxxtest env -->
+            <id>xxxtest</id>
             <properties>
-                <profiles.active>tuhutest</profiles.active>
+                <profiles.active>xxxtest</profiles.active>
             </properties>
         </profile>
     </profiles>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resource</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                    <include>**/*.db</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
 </project>
