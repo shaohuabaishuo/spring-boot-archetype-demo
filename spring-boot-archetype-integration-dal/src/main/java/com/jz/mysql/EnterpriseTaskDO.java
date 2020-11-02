@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 /**
  * 任务对象
- * @author liuhaoyong 
+ * @author
  * @date 2019年6月18日 下午7:15:23
  */
 public class EnterpriseTaskDO{
